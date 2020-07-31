@@ -8,7 +8,7 @@
 						<Action Name="" ID="{A1199D4C-1E3E-4FB5-9040-8679E9CFC86C}" ShortID="130006801">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="simplemusiccontainer" ID="{D4782D40-9BE3-4BAF-92D5-3ECF02E0DB6C}" WorkUnitID="{03116233-D114-4930-9DAC-F0AC08570D26}"/>
+									<ObjectRef Name="TowerSystem" ID="{D4782D40-9BE3-4BAF-92D5-3ECF02E0DB6C}" WorkUnitID="{03116233-D114-4930-9DAC-F0AC08570D26}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

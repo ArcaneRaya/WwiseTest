@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{03116233-D114-4930-9DAC-F0AC08570D26}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSwitchContainer Name="simplemusiccontainer" ID="{D4782D40-9BE3-4BAF-92D5-3ECF02E0DB6C}" ShortID="948651196">
+				<MusicSwitchContainer Name="TowerSystem" ID="{D4782D40-9BE3-4BAF-92D5-3ECF02E0DB6C}" ShortID="948651196">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{88F84433-3DAC-47E8-B769-164003EDDDE4}"/>
@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="New Music Playlist Container" ID="{96CE372D-9420-420F-B7A5-946CB09DE6C4}" ShortID="282136531">
+						<MusicPlaylistContainer Name="MainLoop" ID="{96CE372D-9420-420F-B7A5-946CB09DE6C4}" ShortID="282136531">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{88F84433-3DAC-47E8-B769-164003EDDDE4}"/>
@@ -23,7 +23,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="New Music Segment" ID="{54C6FF85-EBD4-4379-8869-D62E2712AAE2}" ShortID="663356838">
+								<MusicSegment Name="SimpleLoop" ID="{54C6FF85-EBD4-4379-8869-D62E2712AAE2}" ShortID="663356838">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="32270.8219194287"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{88F84433-3DAC-47E8-B769-164003EDDDE4}"/>
@@ -34,11 +37,26 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="New Music Track" ID="{66EC113D-1884-4696-9F4A-FAEE2A53D69C}" ShortID="754241880">
+											<PropertyList>
+												<Property Name="OverrideMidiTarget" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="MidiTarget">
+													<ObjectRef Name="BASS 01" ID="{06BFEA56-2B22-48E7-9CC7-507788A0775F}" WorkUnitID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C6B5B394-4A2B-46FB-B232-BD5DEE0F4E49}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<MidiFileSource Name="SimpleLoop" ID="{B8D0D272-DBD3-433D-8759-A3D9C70BF75B}" ShortID="417630905">
+													<Language>SFX</Language>
+													<MidiFile>SimpleLoop.mid</MidiFile>
+													<MediaIDList>
+														<MediaID ID="417630905"/>
+													</MediaIDList>
+												</MidiFileSource>
+											</ChildrenList>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{AFD0FF73-ADB5-4C39-9E7C-463EC9FBADEB}">
 													<PropertyList>
@@ -48,7 +66,16 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{6920CDFE-8E9D-4D51-9CF8-FEE1BED1A98B}"/>
+												<MusicTrackSequence Name="" ID="{6920CDFE-8E9D-4D51-9CF8-FEE1BED1A98B}">
+													<ClipList>
+														<MusicClipMidi Name="SimpleLoop" ID="{538183CE-69A7-4FA2-98B3-7A86CD12A278}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="30000"/>
+															</PropertyList>
+															<MidiSourceRef Name="SimpleLoop" ID="{B8D0D272-DBD3-433D-8759-A3D9C70BF75B}"/>
+														</MusicClipMidi>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
 									</ChildrenList>
@@ -57,7 +84,7 @@
 										<MusicCue Name="Exit Cue" ID="{9A7D43D8-4348-4DC7-BAC0-DA8F6391ABCB}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												<Property Name="TimeMs" Type="Real64" Value="30000"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -86,7 +113,7 @@
 											<PropertyList>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
-											<SegmentRef Name="New Music Segment" ID="{54C6FF85-EBD4-4379-8869-D62E2712AAE2}"/>
+											<SegmentRef Name="SimpleLoop" ID="{54C6FF85-EBD4-4379-8869-D62E2712AAE2}"/>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>
@@ -106,6 +133,13 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<EntryList>
+						<Entry>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="MainLoop" ID="{96CE372D-9420-420F-B7A5-946CB09DE6C4}" WorkUnitID="{03116233-D114-4930-9DAC-F0AC08570D26}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>

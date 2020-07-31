@@ -2,7 +2,8 @@
 <ValidationCache Version="1" SchemaVersion="97">
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Triggers\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
-	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\TestProject.wproj" DateLow="1596194659" DateHigh="0"/>
+	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\TestProject.wproj" DateLow="1596195335" DateHigh="0"/>
+	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\TestProject.nick.wsettings" DateLow="1596194814" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Switches\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\States\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
@@ -14,9 +15,9 @@
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Modulators\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
-	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
+	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1596194756" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Game Parameters\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
-	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Events\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
+	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Events\Default Work Unit.wwu" DateLow="1596194781" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Effects\Factory Effects.wwu" DateLow="1596194117" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Effects\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
 	<ValidationCacheItem File="G:\Unity Projects\WwiseTest\WwiseProject\TestProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1596194659" DateHigh="0"/>
